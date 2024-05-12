@@ -1,0 +1,15 @@
+div.detail {
+    text-align: center;
+}
+
+h1.title2 {
+    font-size: x-large;
+}
+
+p.Des2 {
+    margin: auto;
+  width: 50%;
+  padding: 10px;
+    word-break: normal;
+    font-size: medium;
+}
