@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { Image } from 'antd';
+import { Button, Image } from 'antd';
 import './Movie.css';
 
 function Movie() {
@@ -24,9 +24,13 @@ function Movie() {
 
     return (
         <div>
-            <div className="detail text-white content-center">
+            <div className="detail text-white content-center gap-y-8">
                 <div key={movie.id}>
                     <h1 className='title2'>ชื่อเรื่อง : {movie.attributes.title}</h1>
+                    <h2 >คะแนน : {movie.attributes.point}/10 คะแนน</h2>
+                    <Button>
+                        <a className='url ' href={movie.attributes.url_link}>ชมตัวอย่างภาพยนตร์</a> 
+                    </Button>
                     <p className='Des2 w-96'>เรื่องย่อ : {movie.attributes.description}</p>
                     <Image width={400} height={500} className="rounded-xl" src={"http://localhost:1337"+movie.attributes.img.data.attributes.url}/>
                     {/* Add other movie details here */}

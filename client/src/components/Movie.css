@@ -13,3 +13,7 @@ p.Des2 {
     word-break: normal;
     font-size: medium;
 }
+
+a.url {
+    text-align: center;
+}

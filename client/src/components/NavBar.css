@@ -16,3 +16,7 @@ p.Des {
     font-family: 'impact', cursive;
     background-color: dimgray; 
 }
+
+p.dev {
+    text-align: right;
+}

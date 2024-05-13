@@ -31,6 +31,9 @@
     },
     "description": {
       "type": "text"
+    },
+    "url_link": {
+      "type": "string"
     }
   }
 }

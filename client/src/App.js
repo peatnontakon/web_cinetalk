@@ -32,7 +32,7 @@ function App () {
     <div>
       <NavBar />
       <Ba />
-      <div className="show grid grid-cols-3">
+      <div className="show grid grid-cols-3 gap-y-8">
         {movies.map(val => (
             <div key={val.id}>
 

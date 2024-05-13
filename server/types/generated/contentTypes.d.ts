@@ -378,6 +378,7 @@ export interface ApiMovieMovie extends Schema.CollectionType {
     img: Attribute.Media;
     point: Attribute.Float;
     description: Attribute.Text;
+    url_link: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
