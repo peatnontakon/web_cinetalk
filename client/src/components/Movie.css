@@ -17,3 +17,12 @@ p.Des2 {
 a.url {
     text-align: center;
 }
+
+div.player {
+    text-align: center;
+    margin: auto;
+  width: 50%;
+  padding: 0px;
+    word-break: normal;
+    font-size: medium;
+}

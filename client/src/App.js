@@ -10,6 +10,7 @@ import Movie from "./components/Movie";
 
 
 
+
 function App () {
 
   const [movies, setMovies] = useState([]);
@@ -35,7 +36,9 @@ function App () {
       <div className="show grid grid-cols-3 gap-y-8">
         {movies.map(val => (
             <div key={val.id}>
-
+              {val.id  ? (<p>loading</p>) : (<div>
+                <Image width={300} height={400} className="rounded-xl" src={"http://localhost:1337"+val.attributes.img.data.attributes.url}/>
+              </div>)}
               <Image width={300} height={400} className="rounded-xl" src={"http://localhost:1337"+val.attributes.img.data.attributes.url}/>
               <p className="name text-white">{val.attributes.title}</p>
               <p className="text-yellow-400">Score : {val.attributes.point} /10</p>
